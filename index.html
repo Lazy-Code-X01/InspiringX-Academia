@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inspiring - X</title>
+    <link rel="stylesheet" href="./css/index.css">
+    <!--google font-->
+    <link href="https://fonts.googleapis.com/css2?family=Karla:&family=Montserrat&family=My+Soul&family=Nunito+Sans:wght@400&display=swap" rel="stylesheet">
+    <!--font awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <!--aos libarary-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+    <div class="header">
+        <div class="header-1">
+            <p class="desc">
+                <!-- text for an upcomig tech class -->
+                New Academia Class Starts Kicks off <b>April 1st!</b>. Be sure to register for the class and be a Part of <b>Inspiring - X</b>.
+            </p>
+            <div class="date">
+                <div id="countdown">
+                    <!-- countdown timer -->
+                    <div class="timer">
+                        <span id="days"></span>
+                        <small>days</small>
+                    </div>
+                    <div class="timer">
+                        <span id="hours"></span>
+                        <small>hours</small>
+                    </div>
+                    <div class="timer">
+                        <span id="minutes"></span>
+                        <small>minutes</small>
+                    </div>
+                    <div class="timer">
+                        <span id="seconds"></span>
+                        <small>seconds</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="header-2">
+            <div class="logo">
+                <img src="./images/logo.png" alt="logo">
+            </div>
+            <div class="nav">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#faq">FAQs</a></li>
+                    <li><a href="#reg">Registration</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!--hero section-->
+    <div class="hero-section">
+        <div class="hero-text" data-aos="fade-up"  data-aos-duration="2000">
+            <small>Welcome to our upcoming tech class !</small>
+            <h1>we will explore the exciting world of <span class="imp"> technology & web3 </span></h1>
+            <p>We will explore the exciting world of technology and learn about some of the most important concepts and tools that are driving innovation in the modern world.</p>
+            <button class="btn">Get Started</button>
+        </div>
+    </div>
+
+    <!--faq-->
+    <div class="faq-section" id="faq" >
+        <h2>Frequently Asked <span class="imp">Questions</span></h2>
+        <ul data-aos="fade-up"  data-aos-duration="2000">
+          <li class="question">
+            <button aria-expanded="false" aria-controls="answer-1">What is Lorem Ipsum?</button>
+            <div id="answer-1" class="answer">
+              Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+            </div>
+          </li>
+          <li class="question">
+            <button aria-expanded="false" aria-controls="answer-2">Where does it come from?</button>
+            <div id="answer-2" class="answer">
+              Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero.
+            </div>
+          </li>
+          <li class="question">
+            <button aria-expanded="false" aria-controls="answer-3">Why do we use it?</button>
+            <div id="answer-3" class="answer">
+              It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.
+            </div>
+          </li>
+          <li class="question">
+            <button aria-expanded="false" aria-controls="answer-3">Why do we use it?</button>
+            <div id="answer-3" class="answer">
+              It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.
+            </div>
+          </li>
+          <li class="question">
+            <button aria-expanded="false" aria-controls="answer-3">Why do we use it?</button>
+            <div id="answer-3" class="answer">
+              It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.
+            </div>
+          </li>
+        </ul>
+    </div>
+    
+    <!-- registration -->
+    <div class="registration-container" id="reg" >
+      <h2>Come <span class="imp">Onboard</span> Mate !</h2>
+      <form class="form" data-aos="fade-up"  data-aos-duration="2000">
+        <div class="img-holder">
+          <img src="./images/onboard.svg" alt="registration">
+        </div>
+        <div class="form-holder">
+          <div class="input-holder">
+            <input type="text" placeholder="Enter username">
+          </div>
+          <div class="input-holder">
+            <input type="email" placeholder="Enter email">
+          </div>
+          <div class="input-holder">
+            <input type="number" placeholder="Phone number">
+          </div>
+          <div class="btn-holder">
+            <button class="btn">Register</button>
+          </div>
+        </div>
+      </form>
+    </div>
+
+    <!--footer-->
+    <footer>
+      <p>&copy; 2023 Inspiring - X. All rights reserved.</p>
+    </footer>
+
+    <!-- initialize aos -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script src="./js/index.js"></script>
+</body>
+</html>
