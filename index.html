@@ -17,7 +17,7 @@
             <a href="#" class="logo">Inspiring X</a>
             <nav>
                 <ul>
-                    <li><a href="#">Register</a></li>
+                    <li><a href="#reg">Register</a></li>
                 </ul>
             </nav>
         </header>
@@ -29,17 +29,81 @@
                 <p>We will explore the exciting world of technology and learn about some of the most important concepts and tools that are driving innovation in the modern world.</p>
                 <button class="btn">Get Started</button>
             </div>
-    
-            <!-- <div class="imgBx">
-                <img src="./images/man.png" alt="man img">
-            </div> -->
         </section>
     </div>
+
+    <!--faq section-->
+    <div class="faq-section" id="faq" >
+        <h2>Frequently Asked <span class="imp">Questions</span></h2>
+        <ul data-aos="fade-up"  data-aos-duration="2000">
+          <li class="question">
+            <button aria-expanded="false" aria-controls="answer-1">What is Lorem Ipsum?</button>
+            <div id="answer-1" class="answer">
+              Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+            </div>
+          </li>
+          <li class="question">
+            <button aria-expanded="false" aria-controls="answer-2">Where does it come from?</button>
+            <div id="answer-2" class="answer">
+              Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero.
+            </div>
+          </li>
+          <li class="question">
+            <button aria-expanded="false" aria-controls="answer-3">Why do we use it?</button>
+            <div id="answer-3" class="answer">
+              It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.
+            </div>
+          </li>
+          <li class="question">
+            <button aria-expanded="false" aria-controls="answer-3">Why do we use it?</button>
+            <div id="answer-3" class="answer">
+              It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.
+            </div>
+          </li>
+          <li class="question">
+            <button aria-expanded="false" aria-controls="answer-3">Why do we use it?</button>
+            <div id="answer-3" class="answer">
+              It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.
+            </div>
+          </li>
+        </ul>
+    </div>
+
+    <!--register section-->
+    <div class="registration-container" id="reg" >
+        <h2>Come <span class="imp">Onboard</span> Mate !</h2>
+        <form class="form" data-aos="fade-up"  data-aos-duration="2000">
+            <div class="img-holder">
+            <img src="./images/onboard.svg" alt="registration">
+            </div>
+            <div class="form-holder">
+            <div class="input-holder">
+                <input type="text" placeholder="Enter username">
+            </div>
+            <div class="input-holder">
+                <input type="email" placeholder="Enter email">
+            </div>
+            <div class="input-holder">
+                <input type="number" placeholder="Phone number">
+            </div>
+            <div class="btn-holder">
+                <button class="btn">Register</button>
+            </div>
+            </div>
+        </form>
+    </div>      
     
+    <!--footer-->
+    <footer>
+        <p>&copy; 2023 Inspiring - X. All rights reserved.</p>
+    </footer>
+      
+        
     <!-- initialize aos -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init();
     </script>
+    <script src="./js/index.js"></script>
 </body>
 </html>

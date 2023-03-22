@@ -6,6 +6,10 @@
   text-decoration: none;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .cover {
   background-image: url(../images/hero.png);
   background-repeat: no-repeat;
@@ -118,12 +122,151 @@ section .imgBx img {
   z-index: 2;
 }
 
-.wave {
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  z-index: 1;
-  pointer-events: none;
+.faq-section {
+  background-color: #070508;
+  padding: 5rem;
+}
+.faq-section h2 {
+  font-size: 2.5rem;
+  font-weight: 900;
+  margin-bottom: 2rem;
+  color: white;
+  text-align: center;
+}
+.faq-section h2 .imp {
+  background: linear-gradient(90deg, #4ca5ff 2.34%, #45A60A 100.78%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.faq-section ul {
+  list-style: none;
+  padding: 0;
+}
+.faq-section ul .question {
+  margin-bottom: 1rem;
+  width: 80%;
+  margin: 1rem auto;
+}
+.faq-section ul .question button {
+  display: block;
+  width: 100%;
+  margin: 0 auto;
+  padding: 1.5rem;
+  background-color: rgb(13, 17, 23);
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  text-align: left;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-size: 18px;
+  font-weight: 600;
+  color: #fff;
+}
+.faq-section ul .question button[aria-expanded=true] {
+  background-color: #2e2e2e;
+}
+.faq-section ul .question .answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+  color: white;
+}
+.faq-section ul .question .answer[aria-expanded=true] {
+  padding: 2rem;
+  transition: max-height 0.3s ease;
+}
+
+.registration-container {
+  background-color: #070508;
+  padding: 5rem;
+}
+.registration-container h2 {
+  font-size: 2.5rem;
+  font-weight: 900;
+  margin-bottom: 2rem;
+  color: white;
+  text-align: center;
+}
+.registration-container h2 .imp {
+  background: linear-gradient(90deg, #4ca5ff 2.34%, #45A60A 100.78%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.registration-container .form {
+  display: flex;
+  align-items: center;
+  width: 80%;
+  margin: 0 auto;
+  gap: 50px;
+}
+@media screen and (max-width: 768px) {
+  .registration-container .form {
+    width: 90%;
+  }
+}
+.registration-container .form .img-holder {
+  width: 48.7%;
+}
+@media screen and (max-width: 768px) {
+  .registration-container .form .img-holder {
+    width: 100%;
+  }
+}
+.registration-container .form .img-holder img {
+  width: 100%;
+  height: 100%;
+}
+.registration-container .form .form-holder {
+  width: 48.7%;
+}
+@media screen and (max-width: 768px) {
+  .registration-container .form .form-holder {
+    width: 100%;
+  }
+}
+.registration-container .form .form-holder .input-holder {
+  margin-bottom: 1rem;
+}
+.registration-container .form .form-holder .input-holder input {
+  width: 100%;
+  padding: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 18px;
+  font-weight: 400;
+  color: #fff;
+  background-color: rgb(13, 17, 23);
+}
+.registration-container .form .form-holder .btn-holder {
+  margin-top: 1rem;
+}
+.registration-container .form .form-holder .btn-holder button {
+  display: block;
+  width: 100%;
+  padding: 1rem;
+  background-color: rgb(13, 17, 23);
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  text-align: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-size: 18px;
+  font-weight: 600;
+  color: #fff;
+}
+.registration-container .form .form-holder .btn-holder button:hover {
+  background-color: rgb(10, 12, 15);
+}
+.registration-container .form .form-holder .btn-holder button:active {
+  transform: scale(0.98);
+}
+
+footer {
+  background-color: #1e1e28;
+  padding: 1rem;
+  text-align: center;
+  font-size: 14px;
+  color: white;
 }
 
 @media (max-width: 991px) {
@@ -134,6 +277,12 @@ section .imgBx img {
   }
   section .contentBx {
     max-width: 100%;
+  }
+  .faq-section {
+    padding: 4rem 0;
+  }
+  .registration-container {
+    padding: 4rem 0;
   }
 }
 @media (max-width: 767px) {
@@ -159,17 +308,16 @@ section .imgBx img {
   section .contentBx .countdown .time span {
     font-size: 14px;
   }
-  section .contentBx a {
-    position: relative;
-    margin-top: 10px;
-    display: inline-block;
-    background: #fff;
-    color: #ff0083;
-    font-size: 16px;
-    letter-spacing: 2px;
-    padding: 10px 25px;
-    text-decoration: none;
-    border-radius: 40px;
+  .faq-section h2 {
+    font-size: 32px;
+  }
+  .registration-container .form {
+    flex-direction: column;
+    gap: 2rem;
+    width: 80%;
+  }
+  .registration-container h2 {
+    font-size: 32px;
   }
 }
 @media screen and (max-width: 425px) {
@@ -184,5 +332,11 @@ section .imgBx img {
   }
   section .contentBx small {
     font-size: 10px;
+  }
+  .faq-section ul .question {
+    width: 90%;
+  }
+  .registration-container .form {
+    width: 90%;
   }
 }
