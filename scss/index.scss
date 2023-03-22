@@ -12,7 +12,7 @@ html{
     scroll-behavior: smooth;
 }
 .cover{
-    background-image: url(../images/hero.png);
+    background-image: url(../images/BACKGROUND.svg);
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -77,7 +77,12 @@ header{
         color: #fff;
         font-size: 28px;
         text-decoration: none;
-        font-weight: 600;
+        font-weight: 900;
+        // .imp{
+        //     background: linear-gradient(90deg,#4ca5ff 2.34%,#45A60A 100.78%);
+        //     -webkit-background-clip: text;
+        //     -webkit-text-fill-color: transparent;
+        // }
     }
 
     nav{
@@ -94,7 +99,7 @@ header{
                     text-decoration: none;
 
                     &:hover{
-                        color: #ff0083;
+                        color: #45A60A;
                     }
                 }
             }
@@ -359,6 +364,7 @@ footer{
     .faq-section {
         padding: 4rem 0;
     }
+
     .registration-container {
         padding: 4rem 0;
     }
@@ -434,7 +440,7 @@ footer{
         }
     }
     footer{
-        margin-bottom: 4.3rem;
+        margin-bottom: 4.2rem;
     }
 }
 
