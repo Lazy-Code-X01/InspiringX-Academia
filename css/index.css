@@ -223,7 +223,7 @@ section .imgBx img {
 .registration-container h2 {
   font-size: 2.5rem;
   font-weight: 900;
-  margin-bottom: 2rem;
+  margin-bottom: 0.5rem;
   color: white;
   text-align: center;
 }
@@ -310,6 +310,31 @@ footer {
   color: white;
 }
 
+/*----------------------------------alert styling area ---------------------*/
+.alert {
+  width: 70%;
+  margin: 0 auto;
+  margin-bottom: 1rem;
+  height: 1.25rem;
+  display: grid;
+  align-items: center;
+  text-align: center;
+  font-size: 1rem;
+  border-radius: 0.25rem;
+  letter-spacing: 0.2rem;
+  text-transform: capitalize;
+}
+
+.alert-danger {
+  color: #721c24;
+  background: #f8d7da;
+}
+
+.alert-success {
+  color: #155724;
+  background: #d4edda;
+}
+
 @media (max-width: 991px) {
   section {
     flex-direction: column;
@@ -388,6 +413,16 @@ footer {
   }
   footer {
     margin-bottom: 4.2rem;
+  }
+  .alert {
+    width: 90%;
+    height: max-content;
+  }
+}
+@media (max-width: 320px) {
+  .alert {
+    width: 95%;
+    font-size: 14px;
   }
 }
 /* width */
