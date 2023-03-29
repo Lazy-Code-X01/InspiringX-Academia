@@ -6,7 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/index.css">
     <link href="https://fonts.googleapis.com/css2?family=Karla:wght@600&family=Montserrat&family=My+Soul&family=Nunito+Sans:wght@300&display=swap" rel="stylesheet">
-    <title>Document</title>
+    <title>Inpiring X - Academia</title>
+        <!--firebase-->
+        <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-firestore.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/live/3.1/firebase.js"></script>
+    
     <!--aos libarary-->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
@@ -94,38 +99,43 @@
     <!--register section-->
     <div class="registration-container" id="reg" >
         <h2>Come <span class="imp">Onboard</span> Mate !</h2>
-        <form class="form" data-aos="fade-up"  data-aos-duration="2000">
-            <div class="img-holder">
-            <img src="./images/onboard.svg" alt="registration">
-            </div>
-            <div class="form-holder">
-            <div class="input-holder">
-                <input type="text" placeholder="Enter username">
-            </div>
-            <div class="input-holder">
-                <input type="email" placeholder="Enter email">
-            </div>
-            <div class="input-holder">
-                <input type="number" placeholder="Phone number">
-            </div>
-            <div class="btn-holder">
-                <button class="btn">Register</button>
-            </div>
-            </div>
-        </form>
-    </div>      
+        <form class="form" data-aos="fade-up" data-aos-duration="2000" id="registration-form">
+          <div class="img-holder">
+              <img src="./images/onboard.svg" alt="registration">
+          </div>
+          <div class="form-holder">
+              <div class="input-holder">
+                  <input type="text" placeholder="Enter username" id="username" >
+                  <p class="error-message" id="username-error"></p>
+              </div>
+              <div class="input-holder">
+                  <input type="email" placeholder="Enter email" id="email" >
+                  <p class="error-message" id="email-error"></p>
+              </div>
+              <div class="input-holder">
+                  <input type="tel" placeholder="Phone number" id="phone" >
+                  <p class="error-message" id="phone-error"></p>
+              </div>
+              <div class="btn-holder">
+                  <button class="btn" type="submit">Register</button>
+              </div>
+          </div>
+      </form>
+      
+      </div>      
     
     <!--footer-->
     <footer>
         <p>&copy; 2023 Inspiring - X. All rights reserved.</p>
     </footer>
       
-        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>
     <!-- initialize aos -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init();
     </script>
     <script src="./js/index.js"></script>
+    <script src="./js/firebase.js"></script>
 </body>
 </html>

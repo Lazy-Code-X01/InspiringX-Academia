@@ -30,6 +30,7 @@ html{
     justify-content: center;
     align-items: center;
     z-index: 99999;
+    // display: none;
 
     .counter-content{
         display: flex;
@@ -257,6 +258,7 @@ section{
 
 // registration
 .registration-container {
+    // display: none;
     background-color: #070508;
     padding: 5rem;
 
@@ -348,6 +350,8 @@ footer{
     padding: 1rem;
     text-align: center;
     font-size: 14px;
+    // display: none;
+
     color: white;
 }
 
